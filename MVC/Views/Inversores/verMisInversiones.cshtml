@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Dominio.Financiamiento>
+
+@{
+    ViewBag.Title = "verMisInversiones";
+}
+
+<h2>verMisInversiones</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Inversor.Cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Proyecto.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Monto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaFinanciacion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Datos del Solicitante
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li>Cedula : @Html.DisplayFor(modelItem => item.Proyecto.Usuario.Cedula)</li>
+                    </ul>
+                    <ul>
+                        <li>Nombre : @Html.DisplayFor(modelItem => item.Proyecto.Usuario.Nombre)</li>
+                    </ul>
+                    <ul>
+                        <li>Apellido : @Html.DisplayFor(modelItem => item.Proyecto.Usuario.Apellido)</li>
+                    </ul>
+                    <ul>
+                        <li>Celular : @Html.DisplayFor(modelItem => item.Proyecto.Usuario.Celular)</li>
+                    </ul>
+                </div>
+            </div>
+            <br /><br />
+          
+        <td>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Datos del Proyecto
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li>Titulo :   @Html.DisplayFor(modelItem => item.Proyecto.Titulo)</li>
+                    </ul>
+                    <ul>
+                        <li>Monto Solicitado :  @Html.DisplayFor(modelItem => item.Proyecto.MontoTotal)</li>
+                    </ul>
+                    <ul>
+                        <li>Cantidad de Cuotas :  @Html.DisplayFor(modelItem => item.Proyecto.Cuotas)</li>
+                    </ul>
+                    <ul>
+                        <li>Monto Cuota :  @Html.DisplayFor(modelItem => item.Proyecto.MontoCuotas)</li>
+                    </ul>
+                    <ul>
+                        <li>Tasa Aplicada :  @Html.DisplayFor(modelItem => item.Proyecto.TasaInteres)</li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <br /><br />
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Monto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaFinanciacion)
+        </td>
+     
+    </tr>
+}
+
+</table>

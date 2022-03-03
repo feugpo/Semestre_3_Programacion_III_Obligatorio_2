@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+
+<div>
+
+
+    <form class="form-signin" method="post">
+
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Cedula" name="cedula" required="" autofocus="">
+        <br>
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required="">
+        <br>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+
+        <h3>Eres un Inversor pero aun no estas Registrado</h3>
+        <a href='@Url.Action("Create", "Inversores")'>
+            <input type='button' class="btn btn-success" value='Registrarse' />
+        </a>
+
+
+    </form>
+    <h3>PreCargar Usuarios</h3>
+    <a href='@Url.Action("Precarga", "Home")'>
+        <input type='button' class="btn btn-success" value='Registrarse' />
+    </a>
+
+    <h3>PreCargar Proyectos</h3>
+    <a href='@Url.Action("PreCargaProyectos", "Home")'>
+        <input type='button' class="btn btn-success" value='Registrarse' />
+    </a>
+</div>

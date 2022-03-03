@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "CambiarPass";
+}
+
+<h2>Cambiar Contraseña</h2>
+
+
+@if (@ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4>@ViewBag.Mensaje</h4>
+    </div>
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <form class="form-signin" method="post">
+
+        <label for="Password" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" name="Password" placeholder="Password" required="">
+        <br>
+
+        <label for="ConfPassword" class="sr-only">Confirmar Password</label>
+        <input type="password" id="inputPassword" class="form-control" name="ConfPassword" placeholder="Password" required="">
+        <br>
+
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+}
+
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>

@@ -1,0 +1,11 @@
+1|Reparacion a Domicilio|Reparacion electrodomesticos|Reparacion a Domicilio.jpg|50000.00|52500.00|5250.00|10|5.00|Abierto|Albañil 15 años de experiencia|1|4|Personal|3/25/2019 12:00:00 AM
+2|Reparacion de PC|Reparacion de PC a domicilio|Reparacion de PC.jpg|25000.00|26250.00|1750.00|15|5.00|Cerrado|Taller de Reparacion PC|1|11|Personal|7/12/2018 12:00:00 AM
+3|Repartidora|Empresa de fletes|Repartidora.jpg|45000.00|48600.00|1944.00|25|8.00|Abierto|Empresa transportista Fletex S.A.|1|8|Personal|2/3/2020 12:00:00 AM
+4|Inversion inmobiliaria|Propiedad horizontal para alquileres|Inversion inmobiliaria.jpg|90000.00|100800.00|2520.00|40|12.00|Abierto| |6|9|Cooperativo|6/15/2019 12:00:00 AM
+5|Salon de Fiestas|Renovación de Salon el Tucán|Salon de Fiestas.jpg|85000.00|95200.00|2644.00|36|12.00|Abierto|Empresario emprendedor con experiencia en eventos|1|3|Personal|4/12/2020 12:00:00 AM
+6|Rotiseria|Rotisería barrio el Cordón|Rotiseria.jpg|15000.00|15750.00|1575.00|10|5.00|Abierto|Experiencia en panadería de barrio 15 años|1|7|Personal|6/12/2020 12:00:00 AM
+7|Banda Tropical|Conjunto musical los Turlurones|Banda Tropical.jpg|75000.00|78750.00|3937.5|20|5.00|Cerrado|Empresario emprendedor con experiencia en eventos|1|3|Personal|5/14/2020 12:00:00 AM
+8|Funeraria|Arreglos cosméticos a sala principal|Funeraria.jpg|20000.00|21000|1400|15|5.00|Abierto|Empresa familiar tercera generación|1|10|Personal|6/22/2018 12:00:00 AM
+9|Barraca|Expansión de planta|Barraca.jpg|90000.00|100800.00|2240.00|45|12.00|Cerrado| |5|5|Cooperativo|9/18/2019 12:00:00 AM
+10|Emprendimiento IT|Startup IT|Emprendimiento IT.jpg|35000.00|39200.00|871.00|45|12.00|Abierto| |3|6|Cooperativo|10/22/2019 12:00:00 AM
+

@@ -1,0 +1,145 @@
+﻿@model Dominio.Proyecto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+
+<div>
+    <h4>Proyecto</h4>
+
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Datos del Solicitante
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <ul>
+           <li></li>
+        </ul>
+        <ul>
+           <li>Cedula : @Model.Usuario.Cedula</li>
+        </ul>
+          <ul>
+           <li>Nombre : @Model.Usuario.Nombre</li>
+        </ul>
+         <ul>
+           <li>Apellido : @Model.Usuario.Apellido</li>
+        </ul>
+          <ul>
+           <li>Celular : @Model.Usuario.Celular</li>
+        </ul>
+          <ul>
+           <li>Fecha de Nacimiento : @Model.Usuario.FechaNacimiento.ToShortDateString()</li>
+        </ul>
+
+    </div>
+    </div>
+    <br /><br />
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MontoTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MontoTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MontoTotalConInteres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MontoTotalConInteres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MontoCuotas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MontoCuotas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cuotas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cuotas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Imagen)
+        </dt>
+
+        <dd>
+
+            <img src="/Imagenes/@Html.DisplayFor(model => model.Imagen)" style="max-width:50%;width:auto;height:auto;" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TasaInteres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TasaInteres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </dd>
+
+    </dl>
+</div>
+
+
+<p>
+
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<br /><h4>El monto Total a Financiar es de : @ViewBag.monto</h4><br /><br />
+<div>
+    <form class="form-signin" method="post">
+        <label for="inversion" class="sr-only">Añade la inversion</label>
+
+        <input type="text" style="display:none" id="id" class="form-control" value="@Model.Id">
+
+        <input type="text" id="monto" class="form-control" placeholder="monto" name="monto">
+
+        <button type="submit" class="btn btn-primary" onclick="invertir">Sign in</button>
+    </form>
+</div>
