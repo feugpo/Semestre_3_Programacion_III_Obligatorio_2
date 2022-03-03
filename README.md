@@ -3,7 +3,7 @@ Entrega de ejercicio obligatorio de la carrera Analista en Tecnologías de la In
 
 Materia: Programacion 3 (Semestre 3)
 
-Docente: PLinio Gañi
+Docente: Plinio Gañi
 
 Autores: Fernando Ugarte, Matías Poletti, Federico Porta
 
